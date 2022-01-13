@@ -42,7 +42,7 @@
               $sum = $sum + $i;
           }
       }
-      echo "The sum of all divisors: " . $sum; //show the total of all divisors
+      echo "The sum of all divisors: " . $sum; //show the total of all divisors.
 ?>
 </body>
 </html>
