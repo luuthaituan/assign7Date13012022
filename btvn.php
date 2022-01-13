@@ -43,7 +43,7 @@
           }
       }
       echo "The sum of all divisors: " . $sum; //show the total of all divisors
-    //done
+    //done lam bai tiep
 ?>
 </body>
 </html>
