@@ -23,7 +23,7 @@
     $number = null; //create a variable to store number
     if($_SERVER["REQUEST_METHOD"]== "GET"){
         if(isset($_GET['number'])){
-            $number = $_GET['number'];
+            $number = test_input($_GET["number"]);
             if(is_numeric($number)==FALSE){
                 echo "<br>";
                 echo "This is not a number. Please check again.";
