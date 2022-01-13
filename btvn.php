@@ -9,7 +9,7 @@
 <body>
     <h1>Divisor of an integer</h1>
     <form action="btvn.php" method="get">
-        Enter your number here: <input type="text" name="number"> <br>
+        Enter your number here: <input type="number" name="number"> <br>
         <input type="submit" value="submit">
     </form>
     <?php
@@ -38,10 +38,11 @@
       $sum = 0;
       for($i=1; $i <= $number; $i++){
           if($number % $i ==0){
-              echo $i . "<br>";
+              echo $i . "   ";
               $sum = $sum + $i;
           }
       }
+      echo "<br>";
       echo "The sum of all divisors: " . $sum; //show the total of all divisors.
 ?>
 </body>
