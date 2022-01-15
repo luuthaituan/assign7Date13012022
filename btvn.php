@@ -22,13 +22,11 @@
     // Viết chương trình tính tổng của tất cả các ước số của 1 số nguyên dương n - Finding the sum of the divisors of n
     $number = null; //create a variable to store number
     if($_SERVER["REQUEST_METHOD"]== "GET"){
-        if(isset($_GET['number'])){
-            $number = test_input($_GET["number"]);
-            if(is_numeric($number)==FALSE){
-                echo "<br>";
-                echo "This is not a number. Please check again.";
-                die;
-            }
+        if(empty($_GET['number'])){
+            echo "Please type a number";
+            die;
+        }else {
+            $number = $_GET['number'];
         }
     }
       echo "<br>";
