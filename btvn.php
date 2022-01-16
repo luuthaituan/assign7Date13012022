@@ -35,6 +35,10 @@ if($_SERVER["REQUEST_METHOD"]== "GET"){
         die;
     }else {
         $number = test_input($_GET['number']);
+        if($number <0){
+            echo '<div class="alert alert-danger"><strong>This is not an integer number</strong></div>';
+            die;
+        }
     }
 }
 echo "<br>";
