@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"]== "GET"){
         echo '<div class="alert alert-danger"><strong>Please type a number</strong></div>';
         die;
     }else {
-        $number = $_GET['number'];
+        $number = test_input($_GET['number']);
     }
 }
 echo "<br>";
