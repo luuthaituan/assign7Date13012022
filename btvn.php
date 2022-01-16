@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <h1>Divisor of an integer</h1>
-    <form action="btvn2.php" method="get">
+    <form action="btvn.php" method="get">
         <div class="form-group">
             <label for="email">Enter your number here:</label>
             <input type="number" class="form-control" id="number" placeholder="Enter a number" name="number">
